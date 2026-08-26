@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>My New Hugo Project</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on My New Hugo Project</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 25 Aug 2026 19:38:57 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Testpost</title>
+				<link>http://localhost:1313/posts/testpost/</link>
+				<pubDate>Tue, 25 Aug 2026 19:38:57 -0700</pubDate>
+				<guid>http://localhost:1313/posts/testpost/</guid>
+				<description>&lt;p&gt;This is a test post&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About</title>
+				<link>http://localhost:1313/about/</link>
+				<pubDate>Sat, 08 Aug 2026 19:22:17 -0700</pubDate>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;p&gt;Welcome to the site! This is mostly a companion site to the Southwest Virginia Astronomy Facebook group and page.&#xA;The purpose is to have somewhere to post more detailed content when those interested can read it. If you like what I do and would like to support me, you can do so by donating at any of the links below or by ordering from my Society6 store if you want a physical item with a picture of space taken from right here in Southwest Virginia.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

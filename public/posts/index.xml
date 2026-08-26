@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on My New Hugo Project</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on My New Hugo Project</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 25 Aug 2026 19:38:57 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Testpost</title>
+				<link>http://localhost:1313/posts/testpost/</link>
+				<pubDate>Tue, 25 Aug 2026 19:38:57 -0700</pubDate>
+				<guid>http://localhost:1313/posts/testpost/</guid>
+				<description>&lt;p&gt;This is a test post&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
