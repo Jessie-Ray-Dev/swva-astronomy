@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Posts on My New Hugo Project</title>
+		<title>Posts on Southwest Virginia Astronomy</title>
 		<link>http://localhost:1313/posts/</link>
-		<description>Recent content in Posts on My New Hugo Project</description>
+		<description>Recent content in Posts on Southwest Virginia Astronomy</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -14,11 +14,11 @@
 		
 			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Testpost</title>
-				<link>http://localhost:1313/posts/testpost/</link>
+				<title>New Site!</title>
+				<link>http://localhost:1313/posts/new-site/</link>
 				<pubDate>Tue, 25 Aug 2026 19:38:57 -0700</pubDate>
-				<guid>http://localhost:1313/posts/testpost/</guid>
-				<description>&lt;p&gt;This is a test post&lt;/p&gt;</description>
+				<guid>http://localhost:1313/posts/new-site/</guid>
+				<description>&lt;p&gt;Welcome to the new version of the Southwest Virginia Astronomy website!&lt;/p&gt;&#xA;&lt;p&gt;Please bear with me as I update it and get content posted. This change was made due to the old version of the site being difficult to maintain and because a full Wordpress site is overkill for what this site is used for.&lt;/p&gt;&#xA;&lt;p&gt;If you are new here, welcome! This is intended as a place where more technical and long form posts can be made since most people are not going to be interested in reading long form content on Facebook. I post full tutorials, articles, and observing logs here as well as any recurring local events I know about.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Events on Southwest Virginia Astronomy</title>
+		<link>http://localhost:1313/events/</link>
+		<description>Recent content in Events on Southwest Virginia Astronomy</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 25 Aug 2026 20:18:17 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Touring The Galaxy 2026</title>
+				<link>http://localhost:1313/events/touringthegalaxy/</link>
+				<pubDate>Tue, 25 Aug 2026 20:18:17 -0700</pubDate>
+				<guid>http://localhost:1313/events/touringthegalaxy/</guid>
+				<description>&lt;p&gt;Touring the Galaxy is a recurring public outreach astronomy event held at the Natural Tunnel State Park. All are welcome whether you have a telescope or not. Park volunteers will take you on a journey through space using your own two eyes and a telescope. You will hear descriptions of many objects and constellations in the night sky and get the chance to see things you have never seen before!&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

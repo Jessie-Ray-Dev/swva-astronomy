@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Abouts on Southwest Virginia Astronomy</title>
+		<link>http://localhost:1313/about/</link>
+		<description>Recent content in Abouts on Southwest Virginia Astronomy</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 08 Aug 2026 19:22:17 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>About</title>
+				<link>http://localhost:1313/about/about/</link>
+				<pubDate>Sat, 08 Aug 2026 19:22:17 -0700</pubDate>
+				<guid>http://localhost:1313/about/about/</guid>
+				<description>&lt;p&gt;Welcome to the site! This is mostly a companion site to the Southwest Virginia Astronomy Facebook group and page.&#xA;The purpose is to have somewhere to post more detailed content when those interested can read it. If you like what I do and would like to support me, you can do so by donating at any of the links below or by ordering from my Society6 store if you want a physical item with a picture of space taken from right here in Southwest Virginia.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

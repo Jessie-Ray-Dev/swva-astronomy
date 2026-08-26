@@ -1,4 +1,26 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.swva-astronomy.com'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Southwest Virginia Astronomy'
 theme = "ananke"
+
+
+[menus]
+    [[menus.main]]
+        name = 'Home'
+        pageRef = '/'
+        weight = 10
+
+    [[menus.main]]
+        name = 'Posts'
+        pageRef = '/posts'
+        weight = 20
+
+    [[menus.main]]
+        name = 'Events'
+        pageRef = '/events'
+        weight = 30
+
+    [[menus.main]]
+        name = 'About'
+        pageRef = '/about'
+        weight = 40
