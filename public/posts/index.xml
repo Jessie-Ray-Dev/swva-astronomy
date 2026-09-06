@@ -10,9 +10,23 @@
 		
 		
 		
-			<lastBuildDate>Tue, 25 Aug 2026 19:38:57 -0700</lastBuildDate>
+			<lastBuildDate>Fri, 04 Sep 2026 16:26:14 -0400</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>OnStep_CG5_Conversion</title>
+				<link>http://localhost:1313/posts/onstep_cg5_conversion/</link>
+				<pubDate>Fri, 04 Sep 2026 16:26:14 -0400</pubDate>
+				<guid>http://localhost:1313/posts/onstep_cg5_conversion/</guid>
+				<description>&lt;p&gt;Jessie Ray – October 2024&lt;/p&gt;&#xA;&lt;p&gt;THE REASON:&lt;/p&gt;&#xA;&lt;p&gt;My trusty Celestron CG5 Advanced GT mount has been… not to trusty since it came back from being repaired by Celestron. I had sent it to them to be fixed due to the motor control board dying and they insisted that the motors needed to be replaced as well. All told that costed me almost $500 USD in August of last year not including the shipping cost to get it from Virginia to California. Am I stupid? There is a good chance that might be the case since I could have bought another one for less than that. Or I could have done what I have decided to do now, which is convert it to OnStep. Recently the motor control board that was installed by Celestron has taken to randomly disconnecting during a slew and will not continue unless you hit the back button on the hand controller. Wouldn’t be a huge deal for visual use since I would already have the controller in hand, but I use this mount for astrophotography (I use an 8” dob for visual) so I am usually asleep when this thing is doing its job.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>TelescopeLevelers</title>
+				<link>http://localhost:1313/posts/telescopelevelers/</link>
+				<pubDate>Fri, 04 Sep 2026 08:36:01 -0400</pubDate>
+				<guid>http://localhost:1313/posts/telescopelevelers/</guid>
+				<description>&lt;p&gt;(Ray O’Connor – 2024)&lt;/p&gt;&#xA;&lt;p&gt;At the Natural Tunnel State Park where we do outreach, we make use of an older, park-owned telescope; a 10” Meade, Schmidt Cassegrain, model LX-50. We use the scope as you would any other and, knowing the sky as we do, never use its original intended functions. A keypad and small readout screen on a handset prompts the user which direction to slew the scope, guiding you to a known object (e.g. M13, or NGC 884). These older telescopes are known as “Push To” scopes, and are the predecessors to the standard “Go To” scopes, seen everywhere today.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>New Site!</title>
 				<link>http://localhost:1313/posts/new-site/</link>
