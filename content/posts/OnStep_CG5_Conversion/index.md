@@ -1,38 +1,39 @@
 +++
 date = '2026-09-04T16:26:14-04:00'
 draft = true
-title = 'OnStep_CG5_Conversion'
+title = 'OnStep CG5 Conversion'
 +++
-Jessie Ray – October 2024
+Jessie Ray – October 2026
 
-THE REASON:
+# Overview
 
-My trusty Celestron CG5 Advanced GT mount has been… not to trusty since it came back from being repaired by Celestron. I had sent it to them to be fixed due to the motor control board dying and they insisted that the motors needed to be replaced as well. All told that costed me almost $500 USD in August of last year not including the shipping cost to get it from Virginia to California. Am I stupid? There is a good chance that might be the case since I could have bought another one for less than that. Or I could have done what I have decided to do now, which is convert it to OnStep. Recently the motor control board that was installed by Celestron has taken to randomly disconnecting during a slew and will not continue unless you hit the back button on the hand controller. Wouldn’t be a huge deal for visual use since I would already have the controller in hand, but I use this mount for astrophotography (I use an 8” dob for visual) so I am usually asleep when this thing is doing its job.
+This article details my journey in converting my Celestron CG5 mount to OnStep. I am not quite done tweaking it just yet, so this article may get updated in the future or I will write additional articles and link them here. 
 
-Mechanically there is nothing wrong with the mount, and the more research I do online the more I find that I think I will be perfectly happy with it after I replace the electronics, and while I am at it I may as well convert it to a belt driven system to increase the accuracy.
+Included here will be:
+- The purchases I made
+- An explanation of the config
+- Some difficulties I had
 
-I have not started on this, so everything below this line of text is based solely on my preliminary research. Come back to my site later to see the progress as I work on it. In the meantime, I will try to continue my imaging projects with my small Explore Scientific iExos 100-2 mount, but I’m not sure I will even be able to get my 130mm f/5 Newtonian to balance on it so it will probably be wide field projects with a DSLR and lens for a while.
+# The Reason
 
-THE REQUIREMENTS:
+One may wonder why even bother doing an OnStep conversion. And honestly, I probably wouldn't have even bothered, except that the electronics in my mount went haywire. It would often freak out, not knowing where it was, and then my scope would end up crashing into my tripod at night. The tracking was also completely off due to these errors. It would also just stop communicating between ASCOM and the hand controller. (Note that these old mounts do not have USB, so the best way to interface with them is via USB on the bottom of the HC).
 
-An Arduino
+I had already sent the mount to Celestron, who were able to replace the components after I had fried them by plugging something in incorrectly, but unfortunately the components they sent back only worked for a little while. Between the cost to send it to them and the cost of the repairs, I decided I was better off to take matters into my own hands. 
 
-This is what will run the OnStep firmware and interact with the motors
+Given this, I started doing research on OnStep. At first, I thought I might go about doing all of it manually, but at the time I didn't know enough about ESP32's, motors, motor drivers, etc. to feel that I was comfortable getting all of the parts. Given this, I got in contact with George Cushing, from whome I was able to purchase a whole kit for a very reasonable price. 
 
-2 Nema 17 motor and drivers
+# The Setup
 
-One motor each for the Dec and RA axis
+Fortunately, once some bugs were figured out the setup itself is quite simple. Simple enough that I feel that if I go about motorizing another mount I will probably purchase the individual parts and put it together myself. The most important thing is that you know what the gear ratio of your mount is and that you then also know what the gear reduction is that you are using between your drive and your axis control. 
 
-2 belts and pulleys
+For example, for a CG5 mount or its siblings, that is 144:1 for both axis. If your mount has a different ratio per axis, you will need to look that up and do the math accordingly. The pullys supplied to me from George were 48 and 16 tooth, giving a 3:1 ratio. You also need to know how many steps are in one full rotation of your motors. The ones supplied with my kit were 400 step NEMA 17s. You also need to know how many microsteps there are per step (modern stepper motors are capable of making smaller steps in between their full physical steps) my motors do 32 microsteps perstep. All of this comes together to create the magic number. That being how many microsteps are there per one full rotation of your mount. The formula for that is below
 
-I will be converting this to a belt driven system, so I will need belts and pulleys to run from the motors to the gearing on the mount
+motor steps * micro steps per full step * pully gear reduction * worm gear reduction
 
-Cables
+So for my mount that is 400 * 32 * 3 * 144 which gives us 5,529,600 steps per full rotation. You then divide that by 360 to get 15,360 microsteps per degree. Remember that, because we need that number to put into our OnStep config later. Also, if you're interested in your resolution you can use this here. Divide your number by 3600 to get steps per arc second. In my case that is about 4.26 microsteps per arc second. Which means that a single microstep is about 0.23 arc seconds, which is well below the resoltuion of all but the largest scopes. Meaning that any tracking errors are not likely to come from not having enough tracking resolution and much more likely to come from manufacturing errors in the system, polar alignment, or wind.
 
-I will need cabling to hook everything together
+# The Issues
 
-A covering
+Unfortunately, I had some issues right away. The motor drivers that were sent turned out to not be the appropriate drivers and they did not use the right protocol to talk to the OnStep firmware. I ended up having to purchase replacement drivers. For future reference, be sure to get TMC2130 drivers.
 
-This is technically optional, but I would just feel better if all of my electronics are nicely contained in some kind of box. The main thing that really needs to get covered is the Arduino, but I would prefer it if the motors and the gearing were covered and not exposed.
-
-The next post I make about this should include the parts I purchase and any math I have to do to figure that out. I am still in the beginning stages of this, but I don’t think there is any reason to get rid of something that is mechanically sound if I can bring new life into it.
+Once that was straightened out, I ran into a new issue

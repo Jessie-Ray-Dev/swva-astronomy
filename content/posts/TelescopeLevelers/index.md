@@ -1,7 +1,7 @@
 +++
 date = '2026-09-04T08:36:01-04:00'
 draft = true
-title = 'TelescopeLevelers'
+title = 'Telescope Levelers'
 +++
 (Ray O’Connor – 2024)
 
