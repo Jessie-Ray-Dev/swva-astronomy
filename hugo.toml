@@ -1,7 +1,7 @@
 baseURL = 'https://www.swva-astronomy.com'
 locale = 'en-us'
 title = 'Southwest Virginia Astronomy'
-theme = "ananke"
+theme = 'nuno'
 
 
 [menus]
